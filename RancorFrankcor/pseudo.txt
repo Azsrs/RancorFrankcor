@@ -1,0 +1,38 @@
+1. Introducera spelet samt dess regler
+
+2. Fråga om en save ska laddas, om ja: Fråga vilken, om det inte finns en kompatibel fil ge errormeddelande och fortsätt.
+
+3. Fråga om användarnamn + presentera riktlinjer för användarnamn 
+
+4. Spara givet användarnamn + neka ogiltiga namn 
+
+5. Presentera karaktärsklasserna spelaren får välja mellan + dess egenskaper
+
+6. Ta emot svaret från spelaren och assigna klassen + ge error vid eventuellfelinmatning med förtydligande av instruktion
+
+7. Presentera möjliga motståndare, vad deras unika egenskaper är 
+
+8. Slumpa mellan motståndarna och presentera vilken motståndare spelaren ska köra mot
+
+9. Fråga om spelare är redo att börja fighten
+
+10. Visa båda spelares hälsa samt ge spelaren val mellan olika drag (slag, spark, block, grapple, weave)
+
+11. Baserat på dragen motståndaren och spelaren har valt, jämför relevanta egenskaper och presentera resultatet av det valda draget samt dess effekt på spelarens hälsa + gör avdrag på hälsan om relevant
+t.ex om spelaren har valt en klass med låg snabbhet och motståndaren weavar bort från ett slag ska motståndaren lyckas undvika och därmed ska inget avdrag göras.
+
+12. Fråga igen om drag, detta loopar till någon har nått hälsa 0
+
+13. Ge vinnare, poäng samt fråga om spelare vill köra igen
+
+14. Vill spelaren köra igen: Presentera möjligheten att besöka en affär, Vill spelaren avsluta: Fråga om karaktären ska sparas.
+
+15. Vill spelaren spara karaktären ska egenskaperna samt poäng sparas lokalt i en fil med information relevant till specifika saven (poäng, namn, karaktärsklass) och spelet ska stängas.
+
+16. Vill spelaren öppna affären ska poäng visas samt möjliga varor att köpa. Spelaren ska få valet att välja produkt samt antal den vill köpa
+
+17. Kolla om spelaren har råd med det den har bett om att få köpa.
+
+18. Har spelaren råd ska köpet gå igenom och relevanta egenskaper ska uppdateras. 
+
+19. Spelet "börjar om" fast med relevant statistik uppdaterad.
