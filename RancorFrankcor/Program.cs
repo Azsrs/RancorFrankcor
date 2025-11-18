@@ -17,7 +17,7 @@ Console.ReadLine();
 Console.Clear();
 
 TypeWriter Loadq = new TypeWriter(); //Frågar om att ladda save?
-Loadq.Text = "Would you like to load a save?";
+Loadq.Text = "Would you like to load a save?\n";
 Loadq.TextSpeed = 20;
 Loadq.Talk();
 string LoadSave = Console.ReadLine().ToLower();
@@ -37,12 +37,24 @@ if (LoadSave == "yes")
         foreach (string filename in Directory.GetFiles(@"Savegames"))
         {
             Console.WriteLine(filename);
+            Console.ReadLine();
         }
 
     }
     else
     {
         Console.WriteLine("No save file found, starting game");
-        Thread.Sleep(150);
+        Console.ReadLine();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
