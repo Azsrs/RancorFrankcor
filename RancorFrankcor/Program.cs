@@ -26,20 +26,15 @@ while (LoadSave != "yes" && LoadSave != "no") //Om ej accepterat svar
 {
 
     Console.WriteLine("Load a save? Please answer Yes or No?");
-    LoadSave = Console.ReadLine();
+    LoadSave = Console.ReadLine().ToLower();
 }
 
 if (LoadSave == "yes")
 {
-    if (Directory.Exists(@"Savegames"))
+    if (File.Exists(@"test.txt"))
     {
-        Console.WriteLine("Please pick save to load");
-        foreach (string filename in Directory.GetFiles(@"Savegames"))
-        {
-            Console.WriteLine(filename);
-            Console.ReadLine();
-        }
-
+        Console.WriteLine("ja");
+        Console.ReadLine();
     }
     else
     {
