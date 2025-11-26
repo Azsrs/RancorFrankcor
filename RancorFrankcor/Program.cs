@@ -49,6 +49,7 @@ Console.Clear();
 // if (redansave == true)
 
 
+
 TypeWriter NameChoose = new TypeWriter();  //Ask name
 NameChoose.Text = "What will you name your fighter?\n";
 NameChoose.TextSpeed = 40;
@@ -62,8 +63,6 @@ while (name == "" || name.Length > 9)  //If name invalid
     name = Console.ReadLine();
 }
 
-Directory.CreateDirectory("savegames");
-File.Create($"{name}.txt"); //Create save file, named after player character
 
 Console.Clear();
 
@@ -72,6 +71,11 @@ ClassChoose.Text = "Please pick a class for your character\n1.Brute: low speed h
 ClassChoose.TextSpeed = 40;
 List<string> classes = ["Brute", "Assassin", "Glass Cannon"];
 ClassChoose.Talk();
+Console.ReadLine 
+Character character = new Character
+{
+    Name = name, 
 
+}
 
 
