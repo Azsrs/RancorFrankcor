@@ -71,7 +71,8 @@ ClassChoose.Text = "Please pick a class for your character\n1.Brute: low speed h
 ClassChoose.TextSpeed = 40;
 List<string> classes = ["Brute", "Assassin", "Glass Cannon"];
 ClassChoose.Talk();
-Console.ReadLine 
+Console.ReadLine();
+
 Character character = new Character
 {
     Name = name, 
